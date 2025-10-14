@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilshad Shaikh | PPC Specialist Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617; /* Slate 950 */
+            color: #d1d5db; /* Gray 300 */
+        }
+
+        .background-gradient {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100vh;
+            background-image: radial-gradient(circle at top right, rgba(124, 58, 237, 0.2), transparent 40%),
+                              radial-gradient(circle at bottom left, rgba(29, 78, 216, 0.2), transparent 50%);
+            z-index: -1;
+        }
+
+        .glass-card {
+            background: rgba(2, 6, 23, 0.5); /* Slate 950 with opacity */
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            border-radius: 1rem;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-card {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+
+        .btn {
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #4f46e5, #7c3aed);
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+        }
+        
+        .nav-sticky {
+            position: sticky;
+            top: 1rem;
+            z-index: 50;
+        }
+
+        .tool-tag {
+            background-color: rgba(59, 130, 246, 0.1);
+            color: #93c5fd;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="background-gradient"></div>
+
+    <div class="relative min-h-screen">
+        <div class="container mx-auto max-w-5xl px-4 py-8 md:py-12">
+
+            <!-- Sticky Navigation -->
+            <nav class="nav-sticky glass-card mb-16 fade-in p-2">
+                <div class="flex justify-between items-center">
+                    <div class="font-bold text-lg text-white">Dilshad Shaikh</div>
+                    <div class="hidden md:flex items-center space-x-6">
+                        <a href="#overview" class="text-gray-300 hover:text-white transition">Overview</a>
+                        <a href="#deliverables" class="text-gray-300 hover:text-white transition">Deliverables</a>
+                        <a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a>
+                    </div>
+                    <a href="https://wa.me/917780460756" target="_blank" rel="noopener noreferrer" class="btn btn-primary px-4 py-2 rounded-lg text-white font-semibold">Hire Me</a>
+                </div>
+            </nav>
+
+            <!-- Hero Section -->
+            <header class="text-center fade-in" style="animation-delay: 100ms;">
+                <h1 class="text-4xl md:text-6xl font-black tracking-tighter text-white mb-4">
+                    Case Study: Launching the <span class="gradient-text">MentorVerse AI</span> Google Ads Campaign
+                </h1>
+                <p class="max-w-3xl mx-auto text-lg text-gray-400 leading-relaxed">
+                    A deep dive into the strategy, execution, and data-driven optimization of a paid search campaign built from the ground up to drive profitable user acquisition.
+                </p>
+            </header>
+            
+            <!-- Project Overview & Highlights -->
+            <section id="overview" class="mt-16 grid md:grid-cols-3 gap-8 items-start fade-in" style="animation-delay: 200ms;">
+                <div class="md:col-span-2 glass-card p-8">
+                     <h2 class="text-2xl font-bold text-white mb-6">Project Overview</h2>
+                    
+                    <div class="space-y-6">
+                        <div>
+                             <h3 class="font-bold text-white flex items-center mb-2"><i data-lucide="target" class="w-5 h-5 mr-2 text-blue-400"></i> The Challenge</h3>
+                             <p class="text-gray-400 leading-relaxed">MentorVerse AI had a powerful product but zero paid acquisition strategy, making them invisible to their core audience of high-intent students actively searching for exam prep solutions.</p>
+                        </div>
+                        <div>
+                             <h3 class="font-bold text-white flex items-center mb-2"><i data-lucide="rocket" class="w-5 h-5 mr-2 text-indigo-400"></i> My Solution</h3>
+                             <p class="text-gray-400 leading-relaxed">I built and executed a complete Google Ads campaign, from strategic planning and compelling ad creation to a rigorous A/B testing framework and performance analysis focused on profitable trial sign-ups.</p>
+                        </div>
+                         <div>
+                            <h3 class="font-bold text-white flex items-center mb-2"><i data-lucide="wrench" class="w-5 h-5 mr-2 text-amber-400"></i> Tools Used</h3>
+                            <div class="flex flex-wrap gap-2 text-sm">
+                               <span class="tool-tag px-3 py-1 rounded-full">Google Ads Suite</span>
+                               <span class="tool-tag px-3 py-1 rounded-full">Google Sheets</span>
+                               <span class="tool-tag px-3 py-1 rounded-full">Looker Studio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-1 space-y-4">
+                    <div class="stat-card glass-card p-6 text-center">
+                        <p class="text-5xl font-extrabold gradient-text">31</p>
+                        <p class="text-sm text-gray-400 mt-1">Trial Sign-ups Generated</p>
+                    </div>
+                    <div class="stat-card glass-card p-6 text-center">
+                         <p class="text-5xl font-extrabold gradient-text">₹750</p>
+                         <p class="text-sm text-gray-400 mt-1">Projected CPA <span class="text-green-400">(from ₹903)</span></p>
+                    </div>
+                    <div class="stat-card glass-card p-6 text-center">
+                        <p class="text-5xl font-extrabold gradient-text">+22%</p>
+                        <p class="text-sm text-gray-400 mt-1">CTR for Winning Ad</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Deliverables -->
+            <section id="deliverables" class="mt-16 fade-in" style="animation-delay: 300ms;">
+                <div class="glass-card p-8">
+                    <h2 class="text-2xl font-bold text-white mb-6 text-center">Project Deliverables</h2>
+                    <p class="text-center text-gray-400 mb-8">Click to explore the detailed proof of work for each phase of the project.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <a href="strategy.html" class="block p-6 rounded-lg text-center transition group hover:bg-white/5 border border-white/10">
+                            <i data-lucide="file-cog" class="w-10 h-10 mx-auto mb-3 text-gray-400 group-hover:text-blue-400 transition"></i>
+                            <h3 class="font-bold text-white">Campaign Strategy & Setup</h3>
+                            <p class="text-sm text-gray-400 mt-1">Goals, Budget, Audience & Structure.</p>
+                        </a>
+                        <a href="creative.html" class="block p-6 rounded-lg text-center transition group hover:bg-white/5 border border-white/10">
+                            <i data-lucide="file-pen" class="w-10 h-10 mx-auto mb-3 text-gray-400 group-hover:text-purple-400 transition"></i>
+                            <h3 class="font-bold text-white">Ad Creative & A/B Test</h3>
+                            <p class="text-sm text-gray-400 mt-1">Copywriting and testing methodology.</p>
+                        </a>
+                        <a href="performance.html" class="block p-6 rounded-lg text-center transition group hover:bg-white/5 border border-white/10">
+                            <i data-lucide="file-line-chart" class="w-10 h-10 mx-auto mb-3 text-gray-400 group-hover:text-green-400 transition"></i>
+                            <h3 class="font-bold text-white">Performance & Analysis</h3>
+                            <p class="text-sm text-gray-400 mt-1">Data insights and optimization plan.</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Hire Me Section -->
+            <section id="contact" class="mt-16 fade-in" style="animation-delay: 400ms;">
+                <div class="glass-card text-center p-8 md:p-12">
+                    <h2 class="text-4xl font-black tracking-tight text-white mb-4">
+                        Ready to Drive Results?
+                    </h2>
+                    <p class="max-w-xl mx-auto text-gray-400 mb-8">
+                        I specialize in building data-driven PPC campaigns that deliver measurable ROI. Let's connect and discuss how I can help you achieve your marketing objectives.
+                    </p>
+                    <div class="flex justify-center items-center flex-wrap gap-4">
+                        <a href="https://wa.me/917780460756" target="_blank" rel="noopener noreferrer" class="btn btn-primary inline-flex items-center justify-center px-6 py-3 text-base font-semibold rounded-lg text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                            Chat on WhatsApp
+                        </a>
+                        <a href="mailto:azeeza7dil@gmail.com" class="inline-flex items-center justify-center px-6 py-3 border border-white/10 text-base font-medium rounded-lg text-gray-300 bg-white/5 hover:bg-white/10 transition">
+                            <i data-lucide="mail" class="w-5 h-5 mr-2"></i> Email Me
+                        </a>
+                        <a href="https://www.linkedin.com/in/dilshad-shaik-082008209/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 border border-white/10 text-base font-medium rounded-lg text-gray-300 bg-white/5 hover:bg-white/10 transition">
+                             <i data-lucide="linkedin" class="w-5 h-5 mr-2"></i> LinkedIn Profile
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="text-center py-10">
+                 <p class="text-sm text-gray-500">Designed & Developed by Dilshad Shaikh | 2025</p>
+            </footer>
+
+        </div>
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
+
