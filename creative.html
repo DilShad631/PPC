@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Creative Framework | PPC Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0B1120; color: #cbd5e1; }
+        .card { 
+            background: linear-gradient(145deg, #1e293b, #111827); 
+            border: 1px solid #334155; 
+            border-radius: 0.75rem; 
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06), 0 0 0 1px rgba(255,255,255,0.05) inset;
+        }
+        .ad-preview {
+            background-color: #111827;
+            border: 1px solid #334155;
+            border-radius: 0.5rem;
+            padding: 16px;
+            font-size: 14px;
+        }
+        .ad-url { color: #9ca3af; }
+        .ad-headline { color: #818cf8; font-size: 18px; font-weight: 500; }
+        .ad-description { color: #d1d5db; line-height: 1.4; }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="container mx-auto max-w-5xl px-4 py-12 md:py-16">
+        <header class="mb-10">
+            <a href="index.html" class="inline-flex items-center text-indigo-400 hover:text-indigo-300 transition mb-4">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                Back to Portfolio Hub
+            </a>
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-50">
+                Creative Testing Framework
+            </h1>
+            <p class="text-slate-400 mt-2 max-w-3xl">
+                A hypothesis-driven approach to ad creative for <span class="font-semibold text-slate-300">MentorVerse AI</span>. This framework was designed to systematically discover the most resonant messaging for our target audience of NEET PG aspirants.
+            </p>
+        </header>
+
+        <main class="space-y-12">
+            <!-- Test 1: Online Coaching -->
+            <section class="card p-6 md:p-8">
+                <div class="mb-6">
+                    <h2 class="text-xl font-bold text-slate-100 flex items-center">
+                        <span class="text-indigo-400 mr-3">Test 01:</span> Online Coaching Ad Group
+                    </h2>
+                    <p class="text-slate-400 text-sm mt-1"><strong class="text-slate-300">Central Question:</strong> What drives the initial click? A logical appeal to structure and technology, or an emotional appeal to overcoming procrastination?</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Variation A -->
+                    <div>
+                        <h3 class="font-semibold text-slate-200 mb-2">Variation A: The Logical Appeal</h3>
+                        <div class="ad-preview">
+                            <span class="ad-url">Ad • www.mentorverse.ai/coaching</span>
+                            <h4 class="ad-headline">AI-Powered NEET PG Coaching</h4>
+                            <p class="ad-description">Get a structured, day-by-day study plan. Our AI tracks your progress & adapts to you. Human mentors for tricky concepts. Start your free trial.</p>
+                        </div>
+                    </div>
+                    <!-- Variation B -->
+                    <div>
+                        <h3 class="font-semibold text-slate-200 mb-2">Variation B: The Emotional Hook</h3>
+                        <div class="ad-preview border-green-400/50">
+                            <span class="ad-url">Ad • www.mentorverse.ai/coaching</span>
+                            <h4 class="ad-headline">The Fun Way to Ace NEET PG</h4>
+                            <p class="ad-description">Stop procrastinating. Turn your prep into a game. Earn points, badges & rewards for completing goals. Stay motivated. Start your free trial now!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Test 2: Mock Tests -->
+            <section class="card p-6 md:p-8">
+                <div class="mb-6">
+                    <h2 class="text-xl font-bold text-slate-100 flex items-center">
+                        <span class="text-indigo-400 mr-3">Test 02:</span> Mock Tests Ad Group
+                    </h2>
+                    <p class="text-slate-400 text-sm mt-1"><strong class="text-slate-300">Central Question:</strong> Do users respond better to a list of features (what it is) or the ultimate benefit (what it does for them)?</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Variation A -->
+                    <div>
+                        <h3 class="font-semibold text-slate-200 mb-2">Variation A: The Feature Focus</h3>
+                        <div class="ad-preview">
+                            <span class="ad-url">Ad • www.mentorverse.ai/mock-tests</span>
+                            <h4 class="ad-headline">Realistic NEET PG Mock Tests</h4>
+                            <p class="ad-description">Experience the real exam pressure with our full-length mock tests. Huge question bank included. Get detailed performance analysis to improve.</p>
+                        </div>
+                    </div>
+                    <!-- Variation B -->
+                    <div>
+                        <h3 class="font-semibold text-slate-200 mb-2">Variation B: The Benefit Focus</h3>
+                        <div class="ad-preview border-green-400/50">
+                            <span class="ad-url">Ad • www.mentorverse.ai/mock-tests</span>
+                            <h4 class="ad-headline">Ace Your Exam With Confidence</h4>
+                            <p class="ad-description">Don't just practice, simulate the real exam. Our in-depth analysis helps you pinpoint weaknesses and boost your score. Feel prepared on exam day.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Test 3: Study Material -->
+            <section class="card p-6 md:p-8">
+                 <div class="mb-6">
+                    <h2 class="text-xl font-bold text-slate-100 flex items-center">
+                        <span class="text-indigo-400 mr-3">Test 03:</span> Study Material Ad Group
+                    </h2>
+                    <p class="text-slate-400 text-sm mt-1"><strong class="text-slate-300">Central Question:</strong> Is the primary value proposition the quality of the content or the efficiency it provides?</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Variation A -->
+                    <div>
+                        <h3 class="font-semibold text-slate-200 mb-2">Variation A: The Quality Angle</h3>
+                        <div class="ad-preview">
+                            <span class="ad-url">Ad • www.mentorverse.ai/materials</span>
+                            <h4 class="ad-headline">All-in-One NEET PG Study Material</h4>
+                            <p class="ad-description">Get comprehensive notes, summaries, and question banks covering every subject for the NEET PG exam. Meticulously curated by top experts.</p>
+                        </div>
+                    </div>
+                    <!-- Variation B -->
+                    <div>
+                        <h3 class="font-semibold text-slate-200 mb-2">Variation B: The Efficiency Angle</h3>
+                        <div class="ad-preview border-green-400/50">
+                            <span class="ad-url">Ad • www.mentorverse.ai/materials</span>
+                            <h4 class="ad-headline">Stop Wasting Time Searching</h4>
+                            <p class="ad-description">Get all the high-yield notes and Q-banks you need in one place. Your complete NEET PG library. Stop feeling overwhelmed and start studying smarter.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Overall Strategy -->
+            <section>
+                 <h2 class="text-2xl font-bold text-slate-100 text-center mb-6">Test Hypotheses Summary</h2>
+                 <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-slate-900/50 p-5 rounded-lg border border-slate-700">
+                        <h3 class="font-semibold text-indigo-300 mb-2">Online Coaching</h3>
+                        <p class="text-sm text-slate-300">The 'Emotional Hook' ad will achieve a higher CTR and lower CPA by directly addressing the student's internal struggle with procrastination.</p>
+                    </div>
+                    <div class="bg-slate-900/50 p-5 rounded-lg border border-slate-700">
+                        <h3 class="font-semibold text-indigo-300 mb-2">Mock Tests</h3>
+                        <p class="text-sm text-slate-300">The 'Benefit Focus' ad will outperform by connecting the feature of mock tests to the ultimate student goal: confidence and exam readiness.</p>
+                    </div>
+                    <div class="bg-slate-900/50 p-5 rounded-lg border border-slate-700">
+                        <h3 class="font-semibold text-indigo-300 mb-2">Study Material</h3>
+                        <p class="text-sm text-slate-300">The 'Efficiency Angle' will generate more conversions by solving a more immediate pain point—the overwhelming and time-consuming search for good materials.</p>
+                    </div>
+                 </div>
+                 <p class="text-xs text-slate-500 mt-6 text-center"><strong class="text-slate-400">Primary Success Metric:</strong> For all tests, the primary KPI is Conversion Rate (Trial Sign-ups), with CTR as a key leading indicator of message resonance.</p>
+            </section>
+
+        </main>
+    </div>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
+
